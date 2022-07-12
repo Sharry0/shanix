@@ -12,19 +12,21 @@ export default function Draggable(props) {
     const [objects, setObjects] = useState();
     const { camera, gl, scene } = useThree()
 
-console.log(groupRef)
+console.log(controlsRef)
 
     useEffect(() => {
         setObjects(groupRef.current.children)
     }, [groupRef])
 
     // useEffect(()=>{
-    //     controlsRef.current.addEventlistener("dragstart", ()=>{
-    //         scene.orbitControls.enabled = false;
-    //     })
-    //     controlsRef.current.addEventlistener("dragend", ()=>{
-    //         scene.orbitControls.enabled = true;
-    //     })
+        // controlsRef.current.addEventListener("hoveron", ()=>{
+        //     scene.orbitControls.enabled = false;
+        // })
+        // controlsRef.current.addEventListener("hoveroff", ()=>{
+        //     scene.orbitControls.enabled = true;
+        // })
+        // console.log(controlsRef)
+        // controlsRef.current.activate()
     // }, [objects])
 
 
