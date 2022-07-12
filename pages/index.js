@@ -20,11 +20,11 @@ export default function Home() {
         <Draggable>
           <Suspense>
             <Box rotateX={3} rotateY={0.2} position={[0, -4, -5]} />
+            <Bulb position={[-5, 2, -7]} />
           </Suspense>
         </Draggable>
         <OrbitControls />
         <ambientLight color={"white"} intensity={0.3} />
-        <Bulb position={[-5, 2, -7]} />
         <Floor position={[0, -5, -5]} />
       </Canvas>
 

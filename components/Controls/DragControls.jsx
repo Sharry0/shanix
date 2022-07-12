@@ -12,8 +12,6 @@ export default function Draggable(props) {
     const [objects, setObjects] = useState();
     const { camera, gl, scene } = useThree()
 
-console.log(controlsRef)
-
     useEffect(() => {
         setObjects(groupRef.current.children)
     }, [groupRef])
