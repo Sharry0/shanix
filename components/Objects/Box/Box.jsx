@@ -6,7 +6,9 @@ import { TextureLoader } from "three";
 export default function Box(props) {
     const mesh = useRef()
     const texture = useLoader(TextureLoader, "texture.jpg")
-    useFrame((state, delta) => (mesh.current.rotation.y += 0.01))
+    useFrame((state, delta) => (
+        mesh.current.rotation.y += 0.01
+        ))
     return (
         <mesh {...props} receiveShadow={true} castShadow={true} ref={mesh}>
             <boxBufferGeometry />
