@@ -10,23 +10,11 @@ export default function Draggable(props) {
     const groupRef = useRef();
     const controlsRef = useRef();
     const [objects, setObjects] = useState();
-    const { camera, gl, scene } = useThree()
+    const { camera, gl } = useThree()
 
     useEffect(() => {
         setObjects(groupRef.current.children)
     }, [groupRef])
-
-    // useEffect(()=>{
-        // controlsRef.current.addEventListener("hoveron", ()=>{
-        //     scene.orbitControls.enabled = false;
-        // })
-        // controlsRef.current.addEventListener("hoveroff", ()=>{
-        //     scene.orbitControls.enabled = true;
-        // })
-        // console.log(controlsRef)
-        // controlsRef.current.activate()
-    // }, [objects])
-
 
     return (
         <group ref={groupRef}>
