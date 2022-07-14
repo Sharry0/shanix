@@ -5,8 +5,9 @@ import Box from '../components/Objects/Box/Box'
 import Bulb from '../components/Objects/Lightbulb/Bulb'
 import Donut from '../components/Objects/Donut/Donut'
 import Caption from '../components/Objects/Text/Caption'
-import PlanetOne from '../components/Objects/Orbit/PlanetOne'
+import PlanetOne from '../components/Objects/Orbit/MainPlanet'
 import Background from '../components/Objects/Orbit/Background'
+import SmallPlanet from '../components/Objects/Orbit/SmallPlanet'
 
 // __________ Controls __________________________________
 import { OrbitControls } from "@react-three/drei"
@@ -30,8 +31,9 @@ export default function Home() {
           <Suspense>
             {/* <Box position={[0, -1, -1]} />
               <Donut position={[-4, -1, -6]} rotateX={9} rotateY={4} /> */}
-              <Background  />
+            <Background />
             <PlanetOne position={[5, 0, -3]} />
+            <SmallPlanet />
             <Caption>{`this\n is a test`} </Caption>
 
           </Suspense>
