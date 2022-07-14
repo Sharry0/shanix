@@ -1,5 +1,5 @@
 
-import { useThree, useFrame } from "@react-three/fiber"
+import {  useFrame } from "@react-three/fiber"
 import { useRef } from "react";
 
 export default function Bulb(props) {

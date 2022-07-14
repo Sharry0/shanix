@@ -1,9 +1,11 @@
 
-import { useFrame } from "@react-three/fiber";
-
+import { useLoader, useFrame } from "@react-three/fiber";
+import { TextureLoader } from "three";
 import { useRef } from "react";
 
-export default function MainPlanet(props) {
+export default function Moon(props) {
+    const texture = useLoader(TextureLoader, "moonTexture.jpeg");
+
   const mesh = useRef();
   useFrame(({ clock }) => (
       Object.assign(mesh.current.rotation, { y: clock.getElapsedTime(), x: clock.getElapsedTime() / 50 })
@@ -11,7 +13,7 @@ export default function MainPlanet(props) {
   return (
       <mesh {...props} receiveShadow={true} castShadow={true} ref={mesh} >
         <sphereGeometry args={[1, 32, 16]}  />
-        <meshPhysicalMaterial  color={"orange"} />
+        <meshPhysicalMaterial map={texture} color={"white"} />
       </mesh>
 
   )

@@ -5,9 +5,9 @@ import Box from '../components/Objects/Box/Box'
 import Bulb from '../components/Objects/Lightbulb/Bulb'
 import Donut from '../components/Objects/Donut/Donut'
 import Caption from '../components/Objects/Text/Caption'
-import PlanetOne from '../components/Objects/Orbit/MainPlanet'
+import MainPlanet from '../components/Objects/Orbit/MainPlanet'
 import Background from '../components/Objects/Orbit/Background'
-import SmallPlanet from '../components/Objects/Orbit/SmallPlanet'
+import SmallPlanet from '../components/Objects/Orbit/Moon'
 import Sun from '../components/Objects/Orbit/Sun'
 
 // __________ Controls __________________________________
@@ -33,10 +33,10 @@ export default function Home() {
             {/* <Box position={[0, -1, -1]} />
               <Donut position={[-4, -1, -6]} rotateX={9} rotateY={4} /> */}
             <Background />
-            <PlanetOne position={[5, 0, -3]} />
+            <MainPlanet position={[5, 0, -3]} />
             {/* <SmallPlanet /> */}
               <Sun />
-            <Caption>{`this\n is a test`} </Caption>
+            <Caption>{`this is \n not a test...`} </Caption>
           </Suspense>
           {/* </Draggable> */}
           {/* <Bulb  /> */}
