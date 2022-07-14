@@ -8,6 +8,7 @@ import Caption from '../components/Objects/Text/Caption'
 import PlanetOne from '../components/Objects/Orbit/MainPlanet'
 import Background from '../components/Objects/Orbit/Background'
 import SmallPlanet from '../components/Objects/Orbit/SmallPlanet'
+import Sun from '../components/Objects/Orbit/Sun'
 
 // __________ Controls __________________________________
 import { OrbitControls } from "@react-three/drei"
@@ -33,12 +34,12 @@ export default function Home() {
               <Donut position={[-4, -1, -6]} rotateX={9} rotateY={4} /> */}
             <Background />
             <PlanetOne position={[5, 0, -3]} />
-            <SmallPlanet />
+            {/* <SmallPlanet /> */}
+              <Sun />
             <Caption>{`this\n is a test`} </Caption>
-
           </Suspense>
           {/* </Draggable> */}
-          {/* <Bulb /> */}
+          {/* <Bulb  /> */}
           <OrbitControls />
           <ambientLight color={"white"} intensity={0.3} />
           {/* <Floor position={[0, -5, -5]} /> */}

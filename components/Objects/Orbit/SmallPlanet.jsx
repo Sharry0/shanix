@@ -11,7 +11,7 @@ export default function MainPlanet(props) {
   return (
       <mesh {...props} receiveShadow={true} castShadow={true} ref={mesh} >
         <sphereGeometry args={[1, 32, 16]}  />
-        <meshPhysicalMaterial  color={"red"} />
+        <meshPhysicalMaterial  color={"orange"} />
       </mesh>
 
   )
