@@ -15,24 +15,27 @@ import { Suspense } from 'react'
 
 export default function Home() {
   return (
-    <div className={css.scene}>
-      <Canvas
-        shadows={true}
-        className={css.canvas}
-        carmera={{ position: [-6, 7, 7] }}
-      >
-        <Draggable>
-          <Suspense>
-            <Box position={[0, -3, -5]} />
-            <Bulb position={[-5, 2, -7]} />
-            <Donut position={[-4, -1, -6]} rotateX={9} rotateY={4} />
-          </Suspense>
-        </Draggable>
-        <OrbitControls />
-        <ambientLight color={"white"} intensity={0.3} />
-        <Floor position={[0, -5, -5]} />
-      </Canvas>
+    <div className={css.scene_container}>
 
+      <div className={css.scene}>
+        <Canvas
+          shadows={true}
+          className={css.canvas}
+          carmera={{ position: [-6, 7, 7] }}
+        >
+          <Draggable>
+            <Suspense>
+              <Box position={[0, -3, -5]} />
+              <Donut position={[-4, -1, -6]} rotateX={9} rotateY={4} />
+            </Suspense>
+          </Draggable>
+          <Bulb />
+          <OrbitControls />
+          <ambientLight color={"white"} intensity={0.3} />
+          <Floor position={[0, -5, -5]} />
+        </Canvas>
+
+      </div>
     </div>
   )
 }
