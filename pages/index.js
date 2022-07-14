@@ -4,6 +4,10 @@ import Floor from '../components/Objects/Floor/Floor'
 import Box from '../components/Objects/Box/Box'
 import Bulb from '../components/Objects/Lightbulb/Bulb'
 import Donut from '../components/Objects/Donut/Donut'
+import Caption from '../components/Objects/Text/Caption'
+import PlanetOne from '../components/Objects/Orbit/PlanetOne'
+import Background from '../components/Objects/Orbit/Background'
+
 // __________ Controls __________________________________
 import { OrbitControls } from "@react-three/drei"
 import Draggable from '../components/Controls/DragControls'
@@ -11,7 +15,6 @@ import Draggable from '../components/Controls/DragControls'
 import css from '../styles/Home.module.css'
 import { Canvas } from "@react-three/fiber"
 import { Suspense } from 'react'
-// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
 export default function Home() {
   return (
@@ -23,17 +26,22 @@ export default function Home() {
           className={css.canvas}
           carmera={{ position: [-6, 7, 7] }}
         >
-          <Draggable>
-            <Suspense>
-              <Box position={[0, -3, -5]} />
-              <Donut position={[-4, -1, -6]} rotateX={9} rotateY={4} />
-            </Suspense>
-          </Draggable>
-          <Bulb />
+          {/* <Draggable> */}
+          <Suspense>
+            {/* <Box position={[0, -1, -1]} />
+              <Donut position={[-4, -1, -6]} rotateX={9} rotateY={4} /> */}
+              <Background  />
+            <PlanetOne position={[5, 0, -3]} />
+            <Caption>{`this\n is a test`} </Caption>
+
+          </Suspense>
+          {/* </Draggable> */}
+          {/* <Bulb /> */}
           <OrbitControls />
           <ambientLight color={"white"} intensity={0.3} />
-          <Floor position={[0, -5, -5]} />
+          {/* <Floor position={[0, -5, -5]} /> */}
         </Canvas>
+        <a href="https://google.com" className={css.link}>to google</a>
 
       </div>
     </div>
