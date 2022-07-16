@@ -3,7 +3,7 @@ import { useFrame, useLoader } from "@react-three/fiber"
 import { TextureLoader } from "three";
 import { useRef } from "react";
 
-export default function OrbitCenter({ orbitSpeed, planetOffset, planetSize, planetTexture }) {
+export default function OrbitCenter({ orbitCenterPos, orbitSpeed, planetOffset, planetSize, planetTexture }) {
 
     const orbitCenter = useRef()
 
@@ -12,7 +12,7 @@ export default function OrbitCenter({ orbitSpeed, planetOffset, planetSize, plan
     ));
 
     return (
-        <mesh ref={orbitCenter}>
+        <mesh ref={orbitCenter} position={orbitCenterPos} >
             <sphereGeometry />
             <meshPhongMaterial emissive={"blue"} />
                 <Planet planetOffset={planetOffset} planetSize={planetSize} planetTexture={planetTexture} />

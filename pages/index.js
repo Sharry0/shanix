@@ -7,8 +7,9 @@ import Donut from '../components/Objects/Donut/Donut'
 import Caption from '../components/Objects/Text/Caption'
 import MainPlanet from '../components/Objects/Orbit/MainPlanet'
 import Background from '../components/Objects/Orbit/Background'
-import SmallPlanet from '../components/Objects/Orbit/Moon'
+import OuterPlanet from "../components/Objects/Orbit/OuterPlanet"
 import Sun from '../components/Objects/Orbit/Sun'
+import Solarsystem from '../components/Objects/Orbit/Solarsystem'
 
 // __________ Controls __________________________________
 import { OrbitControls } from "@react-three/drei"
@@ -31,11 +32,8 @@ export default function Home() {
           {/* <Draggable> */}
           <Suspense>
             {/* <Box position={[0, -1, -1]} /> */}
-              {/* <Donut position={[-4, -1, -6]} rotateX={9} rotateY={4} /> */}
-            <Background />
-            <MainPlanet position={[5, 0, -3]} />
-            {/* <SmallPlanet /> */}
-              <Sun />
+            {/* <Donut position={[-4, -1, -6]} rotateX={9} rotateY={4} /> */}
+            <Solarsystem />
             <Caption>{`this is \n not a test...`} </Caption>
           </Suspense>
           {/* </Draggable> */}
