@@ -30,8 +30,8 @@ export default function Home() {
         >
           {/* <Draggable> */}
           <Suspense>
-            {/* <Box position={[0, -1, -1]} />
-              <Donut position={[-4, -1, -6]} rotateX={9} rotateY={4} /> */}
+            {/* <Box position={[0, -1, -1]} /> */}
+              {/* <Donut position={[-4, -1, -6]} rotateX={9} rotateY={4} /> */}
             <Background />
             <MainPlanet position={[5, 0, -3]} />
             {/* <SmallPlanet /> */}

@@ -8,7 +8,7 @@ export default function Caption({ children }) {
 
   return (
     <Text
-      color={"darkred"}
+      color={"darkgreen"}
       fontSize={width / 20}
       font="/Ki-Medium.ttf"
       position={[width / -5, 0, 0]}
