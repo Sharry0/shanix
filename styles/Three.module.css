@@ -1,0 +1,25 @@
+.scene_container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* background-color: rgba(0, 0, 0, 0.642); */
+  position: absolute;
+}
+
+.scene{
+  width:100vw;
+  height:70vh;
+}
+
+.canvas{
+  /* z-index: -90; */
+  background: #000;
+}
+
+.link{
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}

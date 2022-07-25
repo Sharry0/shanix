@@ -11,7 +11,7 @@ import Solarsystem from '../components/Objects/Orbit/Solarsystem'
 import { OrbitControls } from "@react-three/drei"
 import Draggable from '../components/Controls/DragControls'
 
-import css from '../styles/Home.module.css'
+import css from '../styles/Three.module.css'
 import { Canvas } from "@react-three/fiber"
 import { Suspense } from 'react'
 
