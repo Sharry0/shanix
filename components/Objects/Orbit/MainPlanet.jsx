@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 export default function MainPlanet(props) {
 
-  const texture = useLoader(TextureLoader, "earthTexture.jpeg");
+  const texture = useLoader(TextureLoader, "textures/earthTexture.jpeg");
   const mesh = useRef();
 
   useFrame(({ clock }) => (
