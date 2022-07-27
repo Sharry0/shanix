@@ -2,10 +2,7 @@
 
 .svgContainer{
     height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    z-index: 9999999999;
+    /* width: 100vw;
+    height: 100%; */
 }
+
