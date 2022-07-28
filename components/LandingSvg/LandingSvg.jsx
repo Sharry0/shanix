@@ -1,12 +1,10 @@
 
 import css from "./LandingSvg.module.css"
-import { gsap, Power3 } from "gsap"
+import { gsap, CSSPlugin } from "gsap"
 import { useEffect, useRef } from "react"
 
 export default function LandingSvg() {
 
-    const monoRef = useRef();
-    const q = gsap.utils.selector(monoRef);
     const tl = useRef();
 
 
@@ -14,17 +12,16 @@ export default function LandingSvg() {
         const h = window.innerHeight
         tl.current = gsap.timeline()
             // .set(monoRef.current, { scale: 2 })
-        .set(q(".s"), {xPercent: 50, yPercent: 180,})
+            .set(".s", { xPercent: -500, stroke: "#000", strokeWidth: 2 })
+            .set(".h", { xPercent: -150, stroke: "#000", strokeWidth: 3, scaleY: 1, transformOrigin: "center center" })
+            .set(".a", { xPercent: -3, stroke: "#000", strokeWidth: 3})
+            .set(".r", { scale: 1, stroke: "#000", strokeWidth: 1, transformOrigin: "center center" })
+            .set(".o", { xPercent: 100, scaleX: 0.5, stroke:"#000", strokeWidth:2  })
+            .set(".n", { xPercent: 170, scaleX: 0.5, stroke: "#000", strokeWidth: 2, strokeLinejoin: "round", drawSVG: "20% 60%" })
+            .set(".e", { xPercent: 240, scaleX: 0.5, stroke: "#000", })
+
         // .from(q(".S"), { transformOrigin: "center center",  scale: 0.5, delay: 2 })
         console.log(h)
-
-        // gsap.from(".S", { scale: 0.5, delay: "1" })
-        // gsap.from(".H", { scaleX: 2,  delay: "1" })
-        // gsap.from(".A", { scale: 0.5, delay: "1" })
-        // gsap.from(".O", { scale: 0.5, delay: "1" })
-        // gsap.from(".N", { scale: 0.5, delay: "1" })
-        // gsap.from(".E", { scale: 0.5, delay: "1" })
-        // gsap.to(monoRef.current, {rotation: "+=360"})
 
     }, [])
 
@@ -32,8 +29,8 @@ export default function LandingSvg() {
         <>
 
 
-            <div className={css.svgContainer} ref={monoRef}>
-                <svg width="100%" height="100%" viewBox="0 0 1920 1080" style={{ fillRule: "evenodd", clipRule: "evenodd", strokeLinejoin: "round", strokeMiterlimit: 2 }}>
+            <div className={css.svgContainer} >
+                <svg width="100%" height="100%" viewBox="0 0 1920 1080" style={{ fillRule: "evenodd", clipRule: "evenodd", }}>
                     <g id="sharone" transform="matrix(17.5,0,0,17.4978,-1793.88,-19549.4)">
                         <g className="s" id="S" transform="matrix(0.999844,0,0,0.999844,24.9619,86.0181)">
                             <path d="M127.423,1072.39L132.42,1072.39C133.101,1072.39 133.768,1072.26 134.386,1072C135.003,1071.74 135.571,1071.37 136.053,1070.89C136.534,1070.4 136.911,1069.84 137.166,1069.22C137.422,1068.6 137.557,1067.93 137.557,1067.25C137.557,1067.25 137.557,1067.25 137.557,1067.25C137.557,1065.83 136.983,1064.55 136.054,1063.62C135.126,1062.69 133.843,1062.12 132.427,1062.12C132.427,1062.12 132.422,1062.12 132.422,1062.12C131.777,1062.12 131.145,1061.99 130.56,1061.75C129.976,1061.51 129.438,1061.15 128.982,1060.69C128.525,1060.24 128.169,1059.7 127.927,1059.12C127.685,1058.53 127.557,1057.9 127.557,1057.25L127.557,1057.25C127.557,1055.91 128.101,1054.69 128.982,1053.81C129.862,1052.93 131.079,1052.39 132.422,1052.39C132.422,1052.39 137.423,1052.39 137.423,1052.39L137.423,1052.12L132.422,1052.12C131.005,1052.12 129.722,1052.69 128.793,1053.62C127.864,1054.55 127.29,1055.84 127.29,1057.25C127.29,1057.25 127.29,1057.25 127.29,1057.25C127.29,1057.93 127.425,1058.6 127.681,1059.22C127.936,1059.84 128.312,1060.4 128.793,1060.88C129.274,1061.37 129.841,1061.74 130.458,1062C131.075,1062.25 131.742,1062.39 132.422,1062.39L132.427,1062.39C133.77,1062.39 134.986,1062.93 135.866,1063.81C136.746,1064.69 137.29,1065.91 137.291,1067.25C137.291,1067.25 137.291,1067.25 137.291,1067.25C137.291,1067.9 137.162,1068.53 136.92,1069.12C136.678,1069.7 136.321,1070.24 135.864,1070.7C135.407,1071.15 134.869,1071.51 134.284,1071.75C133.698,1072 133.066,1072.12 132.42,1072.12C132.42,1072.12 127.423,1072.12 127.423,1072.12L127.423,1072.39Z" />
