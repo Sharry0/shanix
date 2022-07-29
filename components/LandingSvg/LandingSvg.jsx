@@ -12,13 +12,14 @@ export default function LandingSvg() {
         const h = window.innerHeight
         tl.current = gsap.timeline()
             // .set(monoRef.current, { scale: 2 })
-            .set(".s", { xPercent: -500, stroke: "#000", strokeWidth: 2 })
-            .set(".h", { xPercent: -150, stroke: "#000", strokeWidth: 3, scaleY: 1, transformOrigin: "center center" })
-            .set(".a", { xPercent: -3, stroke: "#000", strokeWidth: 3})
-            .set(".r", { scale: 1, stroke: "#000", strokeWidth: 1, transformOrigin: "center center" })
-            .set(".o", { xPercent: 100, scaleX: 0.5, stroke:"#000", strokeWidth:2  })
-            .set(".n", { xPercent: 170, scaleX: 0.5, stroke: "#000", strokeWidth: 2, strokeLinejoin: "round", drawSVG: "20% 60%" })
-            .set(".e", { xPercent: 240, scaleX: 0.5, stroke: "#000", })
+            .from(".s", { xPercent: -460, duration: 1, lazy: false, stroke: "#000", strokeWidth: 2, }, 3)
+            .from(".h", { xPercent: -140, duration: 1, lazy: false, stroke: "#000", strokeWidth: 3, scaleY: 1, transformOrigin: "center center" }, 3)
+            .from(".a", { xPercent: -3, duration: 1, lazy: false, stroke: "#000", strokeWidth: 3 }, 3)
+            .from(".r", { xPercent: 15, duration: 1, lazy: false, scale: 1, stroke: "#000", strokeWidth: 1, transformOrigin: "center center" }, 3)
+            .from(".o", { xPercent: 110, duration: 1, lazy: false, scaleX: 0.6, stroke: "#000", strokeWidth: 2 }, 3)
+            .from(".n", { xPercent: 190, duration: 1, lazy: false, scaleX: 0.5, stroke: "#000", strokeWidth: 2, strokeLinejoin: "round" }, 3)
+            .from(".e", { xPercent: 260, duration: 1, lazy: false, scaleX: 0.5, stroke: "#000", strokeWidth: 2 }, 3)
+            
 
         // .from(q(".S"), { transformOrigin: "center center",  scale: 0.5, delay: 2 })
         console.log(h)
