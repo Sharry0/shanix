@@ -10,16 +10,16 @@ export default function LandingSvg() {
 
     useEffect(() => {
         const h = window.innerHeight
-        tl.current = gsap.timeline() // {delay: 3}
-            // .set(monoRef.current, { scale: 2 })
-            // .from(".s", { xPercent: -460, duration: 1, lazy: false, stroke: "#000", strokeWidth: 2, })
-            // .from(".h", { xPercent: -140, duration: 1, lazy: false, stroke: "#000", strokeWidth, scaleY: 1, transformOrigin: "center center" })
-            // .from(".a", { xPercent: -3, duration: 1, lazy: false, stroke: "#000", strokeWidth: 3 })
-            // .from(".r", { xPercent: 15, duration: 1, lazy: false, scale: 1, stroke: "#000", strokeWidth: 1, transformOrigin: "center center" })
-            // .from(".o", { xPercent: 110, duration: 1, lazy: false, scaleX: 0.6, stroke: "#000", strokeWidth: 2 })
-            // .from(".n", { xPercent: 190, duration: 1, lazy: false, scaleX: 0.5, stroke: "#000", strokeWidth: 2, strokeLinejoin: "round" })
-            // .from(".e", { xPercent: 260, duration: 1, lazy: false, scaleX: 0.5, stroke: "#000", strokeWidth: 2 })
-            .set(".sharone", { yPercent: 50 })
+        tl.current = gsap.timeline({delay: 3}) // {delay: 3}
+
+            .from(".s", { xPercent: -460, duration: 1, lazy: false, stroke: "#000", strokeWidth: 2, },0)
+            .from(".h", { xPercent: -140, duration: 1, lazy: false, stroke: "#000", strokeWidth: 3, scaleY: 1, transformOrigin: "center center" },0)
+            .from(".a", { xPercent: -3, duration: 1, lazy: false, stroke: "#000", strokeWidth: 3 },0)
+            .from(".r", { xPercent: 15, duration: 1, lazy: false, scale: 1, stroke: "#000", strokeWidth: 1, transformOrigin: "center center" },0)
+            .from(".o", { xPercent: 110, duration: 1, lazy: false, scaleX: 0.6, stroke: "#000", strokeWidth: 2 },0)
+            .from(".n", { xPercent: 190, duration: 1, lazy: false, scaleX: 0.5, stroke: "#000", strokeWidth: 2, strokeLinejoin: "round" },0)
+            .from(".e", { xPercent: 260, duration: 1, lazy: false, scaleX: 0.5, stroke: "#000", strokeWidth: 2 },0)
+            // .set(".sharone", { yPercent: 50 })
 
         // .from(q(".S"), { transformOrigin: "center center",  scale: 0.5, delay: 2 })
         console.log(h)
