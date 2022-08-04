@@ -10,24 +10,18 @@ export default function LandingSvg() {
 
     useEffect(() => {
         const h = window.innerHeight
-        tl.current = gsap.timeline({ delay: 3 }) // {delay: 3}
-            // .set(".let", { scale: 3 })
-            // .set("#S", { xPercent: -460, duration: 1,  stroke: "#000", strokeWidth: 2, },0)
-            // .set("#S", {  duration: 1, },0)
-            // .set("#H", {  duration: 1, transformOrigin: "center center" },0)
-            // .set("#A", {  duration: 1,  },0)
-            // .set("#R", {  duration: 1,  transformOrigin: "center center" },0)
-            // .set("#O", {  duration: 1, },0)
-            // .set("#N", {  duration: 1,  },0)
-            // .set("#E", {  duration: 1,  },0)
-            // .set("#H", { xPercent: -140, duration: 1,  stroke: "#000", strokeWidth: 3, scaleY: 1, transformOrigin: "center center" },0)
-            // .set("#A", { xPercent: -3, duration: 1,  stroke: "#000", strokeWidth: 3 },0)
-            // .set("#R", { xPercent: 15, duration: 1,  scale: 1, stroke: "#000", strokeWidth: 1, transformOrigin: "center center" },0)
-            // .set("#O", { xPercent: 110, duration: 1,  scaleX: 0.6, stroke: "#000", strokeWidth: 2 },0)
-            // .set("#N", { xPercent: 190, duration: 1,  scaleX: 0.5, stroke: "#000", strokeWidth: 2, strokeLinejoin: "round" },0)
-            // .set("#E", { xPercent: 260, duration: 1,  scaleX: 0.5, stroke: "#000", strokeWidth: 2 },0)
-            // .to("#monogram", {opacity: 0}, 2)
-            // .set("#S", { scale: 0.5 })
+        tl.current = gsap.timeline({ delay: 5 }) // {delay: 3}
+
+            // .from("#S", { x: -20, strokeWidth: 1 }, 0)
+            // .from("#H", { x: -32, scaleY: 1, transformOrigin: "center center" }, 0)
+            // .from(["#HLeft", "#HRight"], {strokeWidth: 2})
+            // .from("#HMid",{ strokeWidth: 1})
+            // .from("#A", { xPercent: -3, strokeWidth: 2 }, 0)
+            // .from("#R", { scale: 1, transformOrigin: "center center", strokeWidth: 1 }, 0)
+            // .from("#O", { x: 40, strokeWidth: 1 }, 0)
+            // .from("#N", { x: 40, scaleX: 0.5, strokeWidth: 2 }, 0)
+            // .from("#E", { x: 55, scaleX: 0.5, strokeWidth: 1 }, 0)
+
         console.log(h)
 
     }, [])
@@ -37,38 +31,41 @@ export default function LandingSvg() {
 
 
             <div className={css.svgContainer}  >
-                <svg width="100%" height="100%" viewBox="250 250 700 700" version="1.1" style={{ fillRule: "evenodd", clipRule: "evenodd", strokeLinejoin: "miter", strokeMiterlimit: 2 }}>
+                <svg width="100%" height="100%" viewBox="300 250 700 700" version="1.1" style={{ fillRule: "evenodd", clipRule: "evenodd", strokeLinejoin: "miter", strokeMiterlimit: 2 }}>
 
 
-                    <g id="monogram" transform="matrix(12.5,0,0,12.4985,-1362.06,-13744.6)" stroke="black" strokeWidth="0.25px">
+                    <g id="monogram" transform="matrix(12.5,0,0,12.4985,-1362.06,-13744.6)" stroke="black" vectorEffect="non-scaling_stroke"  >
                         <g id="S" transform="matrix(0.999844,0,0,0.999844,24.9619,86.0181)">
-                            <path d="M127.423,1072.25C127.423,1072.25 129.88,1072.26 132.358,1072.26C133.702,1072.26 134.99,1071.72 135.94,1070.77C136.89,1069.82 137.424,1068.54 137.424,1067.19C137.424,1067.19 137.424,1067.18 137.424,1067.18C137.424,1064.46 135.219,1062.25 132.5,1062.25L132.423,1062.25C129.661,1062.25 127.423,1060.02 127.423,1057.25L127.423,1057.25C127.423,1054.49 129.661,1052.25 132.423,1052.25L137.423,1052.25" fill="none" />
+                            <path  d="M127.423,1072.25C127.423,1072.25 129.88,1072.26 132.358,1072.26C133.702,1072.26 134.99,1071.72 135.94,1070.77C136.89,1069.82 137.424,1068.54 137.424,1067.19C137.424,1067.19 137.424,1067.18 137.424,1067.18C137.424,1064.46 135.219,1062.25 132.5,1062.25L132.423,1062.25C129.661,1062.25 127.423,1060.02 127.423,1057.25L127.423,1057.25C127.423,1054.49 129.661,1052.25 132.423,1052.25L137.423,1052.25" fill="none" />
                         </g>
-                        <g id="H">
+                        <g id="H" transform="matrix(0.5,0,0,0.5,71.5648,600.066)">
+                            <path  id="HLeft" d="M151.6,1106.08L151.6,1086.08" fill="none"  />
+                            <path  id="HRight" d="M171.6,1106.08L171.6,1086.08" fill="none" />
+                            <path  id="HMid" d="M151.6,1096.08L171.6,1096.08" fill="none"  />
                         </g>
-                        <g id="A" transform="matrix(0.04,0,0,0.0400049,47.3647,1135.01)">
+                        <g id="A" transform="matrix(0.04,0,0,0.0400049,47.3647,1135.01)"  >
                             <g transform="matrix(12.5,0,0,24.9961,605.002,-27070.4)">
-                                <path d="M151.6,1106.08L151.6,1086.08" fill="none" />
+                                <path  d="M151.6,1106.08L151.6,1086.08" fill="none" />
                             </g>
                             <g transform="matrix(7.65404e-16,12.5,-12.4985,7.6531e-16,16324.3,-1567.6)">
-                                <path d="M151.6,1106.08L151.6,1086.08" fill="none" />
+                                <path  d="M151.6,1106.08L151.6,1086.08" fill="none" />
                             </g>
                             <g transform="matrix(-8.83883,8.83883,-24.9969,-24.9969,31488.6,26386.1)">
-                                <path d="M151.6,1106.08L151.6,1086.08" fill="none" />
+                                <path  d="M151.6,1106.08L151.6,1086.08" fill="none" />
                             </g>
                         </g>
-                        <g id="R" transform="matrix(0.499922,0,0,0.499922,93.6631,617.064)" stroke="black" strokeWidth="0.5px">
-                            <path d="M127.423,1072.25L127.423,1052.25L132.426,1052.25C135.187,1052.25 137.425,1054.49 137.425,1057.25L137.425,1057.25C137.425,1060.02 135.187,1062.25 132.426,1062.25L127.423,1062.25L137.425,1072.25" fill="none" />
+                        <g id="R" transform="matrix(0.499922,0,0,0.499922,93.6631,617.064)" vectorEffect="non-scaling-stroke" stroke="black" strokeWidth="0.5px" >
+                            <path  d="M127.423,1072.25L127.423,1052.25L132.426,1052.25C135.187,1052.25 137.425,1054.49 137.425,1057.25L137.425,1057.25C137.425,1060.02 135.187,1062.25 132.426,1062.25L127.423,1062.25L137.425,1072.25" fill="none" />
                         </g>
                         <g id="O" transform="matrix(1,0,0,1,19.9416,85.8528)">
-                            <path d="M147.423,1062.25C147.423,1056.73 142.947,1052.25 137.424,1052.25L137.422,1052.25C131.9,1052.25 127.423,1056.73 127.423,1062.25L127.423,1062.25C127.423,1067.78 131.9,1072.25 137.422,1072.25L137.424,1072.25C142.947,1072.25 147.423,1067.78 147.423,1062.25L147.423,1062.25Z" fill="none" />
+                            <path  d="M147.423,1062.25C147.423,1056.73 142.947,1052.25 137.424,1052.25L137.422,1052.25C131.9,1052.25 127.423,1056.73 127.423,1062.25L127.423,1062.25C127.423,1067.78 131.9,1072.25 137.422,1072.25L137.424,1072.25C142.947,1072.25 147.423,1067.78 147.423,1062.25L147.423,1062.25Z" fill="none" />
                         </g>
-                        <g id="N" transform="matrix(1,0,0,1,-4.23507,52.0258)">
-                            <path d="M151.6,1106.08L151.6,1086.08L171.6,1106.08L171.6,1086.08" fill="none" />
+                        <g id="N" transform="matrix(1,0,0,1,-4.23507,52.0258)" >
+                            <path  d="M151.6,1106.08L151.6,1086.08L171.6,1106.08L171.6,1086.08" fill="none"  />
                         </g>
-                        <g id="E" transform="matrix(1,0,0,1,-4.23507,52.0258)">
-                            <path d="M171.6,1106.08L151.6,1106.08L151.6,1086.08L171.6,1086.08" fill="none" />
-                            <path d="M151.6,1096.08L161.6,1096.08" fill="none" />
+                        <g id="E" transform="matrix(1,0,0,1,-4.23507,52.0258)" >
+                            <path  d="M171.6,1106.08L151.6,1106.08L151.6,1086.08L171.6,1086.08" fill="none" />
+                            <path  d="M151.6,1096.08L161.6,1096.08" fill="none" />
                         </g>
                     </g>
 
