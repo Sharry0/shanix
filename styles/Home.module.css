@@ -1,3 +1,15 @@
 
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 
+.main{
+    /* border: 2px solid blue; */
+    width: 80vw;
+    min-height: 100vh;
+}
 

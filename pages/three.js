@@ -1,15 +1,15 @@
 
 // __________ Objects ___________________________________
-import Floor from '../components/Objects/Floor/Floor'
-import Box from '../components/Objects/Box/Box'
-import Bulb from '../components/Objects/Lightbulb/Bulb'
-import Donut from '../components/Objects/Donut/Donut'
+// import Floor from '../components/Objects/Floor/Floor'
+// import Box from '../components/Objects/Box/Box'
+// import Bulb from '../components/Objects/Lightbulb/Bulb'
+// import Donut from '../components/Objects/Donut/Donut'
 import Caption from '../components/Objects/Text/Caption'
 import Solarsystem from '../components/Objects/Orbit/Solarsystem'
 
 // __________ Controls __________________________________
 import { OrbitControls } from "@react-three/drei"
-import Draggable from '../components/Controls/DragControls'
+// import Draggable from '../components/Controls/DragControls'
 
 import css from '../styles/Three.module.css'
 import { Canvas } from "@react-three/fiber"
