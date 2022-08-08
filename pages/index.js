@@ -11,8 +11,6 @@ export default function Home() {
       <Navbar />
       <LandingSvg />
       <main className={css.main} >
-        <div>
-        </div>
 
         <Hero />
 
