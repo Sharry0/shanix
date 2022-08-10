@@ -7,14 +7,16 @@ import Navbar from "../components/Navbar/Navbar";
 
 export default function Home() {
   return (
-    <div className={css.home} >
-      <Navbar />
+    <>
       <LandingSvg />
-      <main className={css.main} >
+      <div className={css.home} >
+        <Navbar />
+        <main className={css.main} >
 
-        <Hero />
+          <Hero />
 
-      </main>
-    </div>
+        </main>
+      </div>
+    </>
   )
 }

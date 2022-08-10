@@ -29,7 +29,7 @@ export default function LandingSvg() {
         <>
 
             <div className={css.svgContainer}  >
-                <svg width="75%" height="75%" viewBox="300 250 700 700" version="1.1" style={{ fillRule: "evenodd", clipRule: "evenodd", strokeLinejoin: "miter", strokeMiterlimit: 2 }}>
+                <svg width="100%" height="75%" viewBox="300 250 700 700" version="1.1" style={{ fillRule: "evenodd", clipRule: "evenodd", strokeLinejoin: "miter", strokeMiterlimit: 2 }}>
 
                     <g id="monogram" transform="matrix(12.5,0,0,12.4985,-1362.06,-13744.6)" stroke="#93B2BF" strokeWidth="0.25px" >
                         <g id="S" transform="matrix(0.999844,0,0,0.999844,24.9619,86.0181)">
