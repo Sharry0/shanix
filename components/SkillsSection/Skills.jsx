@@ -1,8 +1,20 @@
 
 import css from "./Skills.module.css"
+import Image from "next/image"
 
 export default function Skills() {
-  return (
-    <div>Skills</div>
-  )
+    const skills = {
+
+    }
+
+    // ___ confident Skills: Javascript, Html, CSS, MongoDb, Express, NodeJS, React, NextJs,  Affinity Designer _____
+    // ___ familiar Skills:  TypeScript, Phaser, ethers _____
+    return (
+        <div className={css.skillSection}>
+            <h3>Skills / Tools</h3>
+            <div className={css.skillsContainer}>
+
+            </div>
+        </div>
+    )
 }

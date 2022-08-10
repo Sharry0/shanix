@@ -4,6 +4,7 @@ import LandingSvg from "../components/LandingSvg/LandingSvg";
 import About from "../components/About/About";
 import Hero from "../components/Hero/Hero";
 import Navbar from "../components/Navbar/Navbar";
+import Skills from "../components/SkillsSection/Skills";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <main className={css.main} >
 
           <Hero />
-
+          <Skills />
         </main>
       </div>
     </>

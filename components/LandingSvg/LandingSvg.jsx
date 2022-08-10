@@ -21,7 +21,7 @@ export default function LandingSvg() {
             .from("#E", { x: 55, strokeWidth: "0.1rem", scaleX: 0.5, duration: 2 }, 0)
             .to(["#S", "#H", "#A", "#R", "#O", "#N", "#E"], {opacity: 0, duration:2}, 0)
 
-        console.log(h)
+        // console.log(h)
 
     }, [])
 
