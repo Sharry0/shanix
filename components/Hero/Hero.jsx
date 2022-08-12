@@ -8,7 +8,7 @@ export default function Hero() {
 
 
     return (
-        <div className={css.hero}>
+        <section className={css.hero}>
             <div className={css.heroText}>
 
                 <h1>Hi, my is Sharone. </h1>
@@ -26,6 +26,6 @@ export default function Hero() {
             <div className={css.heroImage}>
                 <HeroImg />
             </div>
-        </div>
+        </section>
     )
 }

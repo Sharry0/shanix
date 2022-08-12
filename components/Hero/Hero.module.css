@@ -1,4 +1,4 @@
-.hero{
+.hero {
     height: 100vh;
     width: 100%;
     background-color: #111111;
@@ -7,35 +7,37 @@
     justify-content: center;
 }
 
-.heroText{
+.heroText {
     width: 40vw;
     padding: 3rem;
 }
-.heroText h1{
+
+.heroText h1 {
 
     font-size: 4rem;
 }
 
-.heroText h2{
+.heroText h2 {
     font-size: 1.5rem;
 }
 
-.heroSocials a{
+.heroSocials a {
     margin-right: 1rem;
 }
 
 
-.heroBtn{
+.heroBtn {
     cursor: pointer;
     margin-top: 2rem;
     background-color: #C3DBE6;
+    /* background-color: #FF6884; */
     font-weight: bold;
     padding: 0.5rem 1.5rem;
     border: none;
     border-radius: 0.2rem;
 }
 
-.heroImage{
+.heroImage {
     width: 40vw;
     display: flex;
     justify-content: center;

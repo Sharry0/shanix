@@ -1,0 +1,28 @@
+
+.projectsSection{
+    position: relative;
+    width: 100%;
+    /* max-width: 100%; */
+    height: 100vh;
+    background-color: rgb(22, 22, 22);
+    z-index: -20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectsSection::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    width: 100%;
+    height: 5.48vw;
+    background-image: url("/bgWave.svg");
+    background-size: 100% 100%;
+    z-index: -10;
+}
+
+
+
+
