@@ -11,7 +11,7 @@ export default function Hero() {
         <section className={css.hero}>
             <div className={css.heroText}>
 
-                <h1>Hi, my is Sharone. </h1>
+                <h1>Hi, my name is Sharone. </h1>
                 <h2>I'm a Full-Stack Developer with an interest in Web3.</h2>
                 <div className={css.heroSocials}>
                     <a href="https://github.com/Sharry0" target="_blank">
