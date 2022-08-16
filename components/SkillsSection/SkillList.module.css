@@ -9,7 +9,6 @@
 
 .skill svg{
     margin: 1rem;
-   
 }
 
 .skill div{
@@ -20,7 +19,7 @@
     width: 300px;
     /* top: 0px; */
     bottom: 0;
-    left: -33px;
+    left: 0;
     display: none;
 }
 

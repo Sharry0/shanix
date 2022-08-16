@@ -1,7 +1,6 @@
 
 import css from "./Skills.module.css"
-import Image from "next/image"
-import { Javascript, CSS, Html, NodeJs, React, MongoDb } from "./SkillList"
+import { Javascript, CSS, Html, NodeJs, React, MongoDb, Bootstrap, AffinityDesigner, NextJs, TypeScript, Phaser, Ethers } from "./SkillList"
 
 export default function Skills() {
     const skills = {
@@ -20,7 +19,13 @@ export default function Skills() {
                 <NodeJs />
                 <React />
                 <MongoDb />
-
+                <Bootstrap />
+                <AffinityDesigner />
+                <NextJs />
+                <TypeScript />
+                <Phaser />
+                <Ethers />
+                
             </div>
         </div>
     )
