@@ -14,6 +14,10 @@ import AffinityDesignerIcon from "./iconSvg/AffinityDesignerIcon";
 import NextJsIcon from "./iconSvg/NextJsIcon";
 import TypeScriptIcon from "./iconSvg/TypeScriptIcon";
 import EthersIcon from "./iconSvg/EthersIcon";
+import ScssIcon from "./iconSvg/ScssIcon";
+import ThreeJsIcon from "./iconSvg/ThreeJsIcon";
+import GsapIcon from "./iconSvg/GsapIcon";
+import BlenderIcon from "./iconSvg/BlenderIcon";
 
 export function Javascript() {
     const [showInfo, setShowInfo] = useState(false);
@@ -186,17 +190,75 @@ export function Ethers() {
     return (
         <div className={css.skill} onMouseEnter={() => setShowInfo(true)} onMouseLeave={() => setShowInfo(false)}>
             <EthersIcon />
-
-            {/* Find Ethers tradmark policy, and link it */}
             <div style={{ display: showInfo ? "block" : "none" }} >
-                <b><i>TypeScript</i></b>  is a free and open source programming language developed and maintained by Microsoft. It is designed for the development of large applications and transpiles to JavaScript. <br />
-                <a href="https://www.typescriptlang.org/" target="_blank">Learn more</a> <br />
-                Icon from : <a href="https://icons8.com" target="_blank">Icons8</a>
+                The <b><i>ethers.js</i></b>  library aims to be a complete and compact library for interacting with the Ethereum Blockchain and its ecosystem. <br />
+                <a href="https://docs.ethers.io/v5/" target="_blank">Learn more</a> <br />
+                Icon from : <a href="https://seeklogo.com/" target="_blank">Seeklogo</a>
             </div>
-            <p>Ethers</p>
+            <p>EthersJS</p>
         </div>
     )
 }
 
+
+export function Scss() {
+    const [showInfo, setShowInfo] = useState(false);
+    return (
+        <div className={css.skill} onMouseEnter={() => setShowInfo(true)} onMouseLeave={() => setShowInfo(false)}>
+            <ScssIcon />
+            <div style={{ display: showInfo ? "block" : "none" }} >
+                <b><i>Sass</i></b> is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets.  <br />
+                <a href="https://sass-lang.com/" target="_blank">Learn more</a> <br />
+                Icon from : <a href="https://icons8.com" target="_blank">Icons8</a>
+            </div>
+            <p>SCSS / SASS</p>
+        </div>
+    )
+}
+
+export function ThreeJs() {
+    const [showInfo, setShowInfo] = useState(false);
+    return (
+        <div className={css.skill} onMouseEnter={() => setShowInfo(true)} onMouseLeave={() => setShowInfo(false)}>
+            <ThreeJsIcon />
+            <div style={{ display: showInfo ? "block" : "none" }} >
+                <b><i>Three.js</i></b>  is a cross-browser JavaScript library and application programming interface used to create and display animated 3D computer graphics in a web browser using WebGL.  <br />
+                <a href="https://threejs.org/" target="_blank">Learn more</a> <br />
+                Icon from : <a href="https://github.com/mrdoob/three.js/blob/38bf5f47a8c01a1d12d16a41b4097dc9ee31daad/files/icon.svg" target="_blank">Github</a>
+            </div>
+            <p>ThreeJS</p>
+        </div>
+    )
+}
+
+export function Gsap() {
+    const [showInfo, setShowInfo] = useState(false);
+    return (
+        <div className={css.skill} onMouseEnter={() => setShowInfo(true)} onMouseLeave={() => setShowInfo(false)}>
+            <GsapIcon />
+            <div style={{ display: showInfo ? "block" : "none" }} >
+                <b><i>GSAP</i></b>   is a robust JavaScript toolset to build high-performance animations that work in every major browser.  <br />
+                <a href="https://greensock.com/gsap/" target="_blank">Learn more</a> <br />
+                Icon from : <a href="https://worldvectorlogo.com/" target="_blank">Worldverctorlogo</a>
+            </div>
+            <p>Gsap</p>
+        </div>
+    )
+}
+
+export function Blender() {
+    const [showInfo, setShowInfo] = useState(false);
+    return (
+        <div className={css.skill} onMouseEnter={() => setShowInfo(true)} onMouseLeave={() => setShowInfo(false)}>
+            <BlenderIcon />
+            <div style={{ display: showInfo ? "block" : "none" }} >
+                <b><i>Blender</i></b> is a free and open-source 3D computer graphics software tool set used for creating animated films, visual effects, art, 3D-printed models, motion graphics, interactive 3D applications, virtual reality, and, formerly, video games.<br />
+                <a href="https://www.blender.org/" target="_blank">Learn more</a> <br />
+                Icon from : <a href="https://icons8.com" target="_blank">Icons8</a>
+            </div>
+            <p>Blender</p>
+        </div>
+    )
+}
 
 
