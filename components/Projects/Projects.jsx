@@ -6,7 +6,7 @@ export default function Projects() {
     <section className={css.projectsSection}>
       
 
-      <h3>Projects</h3>
+      <h2>Projects</h2>
       <div>something
 
       </div>

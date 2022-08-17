@@ -5,6 +5,7 @@
     position: relative;
     padding: 1rem;
     border-bottom: 2px solid gray;
+    width: 300px;
 }
 
 .skill svg{
@@ -16,7 +17,6 @@
     border-radius: 0.5rem;
     position: absolute;
     padding: 1rem;
-    width: 300px;
     /* top: 0px; */
     bottom: 0;
     left: 0;

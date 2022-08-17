@@ -1,11 +1,29 @@
 
 .skillSection{
-    /* height: 70vh; */
+    position: relative;
     width: 100%;
+    padding-bottom: 25vh;
     background-color: #111111;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.skillSection::after{
+    position: absolute;
+    content: "";
+    height: 10vw;
+    width: 100%;
+    bottom: -15px;
+    background-image: url("/bgWave2.svg");
+    background-size: 100% 100%;
+}
+
+.skillsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
 }
 
