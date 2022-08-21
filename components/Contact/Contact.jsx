@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <section className={css.contactSection} id="contact">
       <h2>Contact</h2>
-      <form className={css.contactForm} action="https://formsubmit.co/b976dc71c2bc87cbaa28fef34037fe61" method="POST">
+      <form className={css.contactForm} action="https://formsubmit.co/b976dc71c2bc87cbaa28fef34037fe61" method="POST" >
 
           <input type="hidden" name="_next" value="http://localhost:3000/thanks"/>
 

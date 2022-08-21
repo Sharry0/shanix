@@ -7,6 +7,7 @@ body {
   color: #C3DBE6;
   /* background-color: #323232;
   color: #FFD39E; */
+  scroll-behavior: smooth;
 }
 
 a {

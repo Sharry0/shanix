@@ -21,8 +21,8 @@ export default function Hero() {
                         <Image src="/linkedIn.png" width="35px" height="35px" />
                     </a>
                 </div>
-                <button className={css.heroBtnProject} >Contact</button>
-                <button className={css.heroBtnContact} >Projects</button>
+                <a href="#contact" className={css.heroBtnProject} >Contact</a>
+                <a href="#projects" className={css.heroBtnContact} >Projects</a>
             </div>
             <div className={css.heroImage}>
                 <HeroImg />
