@@ -7,7 +7,7 @@ export default function Skills() {
     // ___ confident Skills: Javascript, Html, CSS, MongoDb, Express, NodeJS, React, NextJs,  Affinity Designer, bootstrap _____
     // ___ familiar Skills:  TypeScript, Phaser, ethers, scss, threeJs, gsap, blender  _____
     return (
-        <section className={css.skillSection}>
+        <section className={css.skillSection} id="skills">
             <h2>Skills / Tools</h2>
             <div className={css.skillsContainer}>
                 <div>
