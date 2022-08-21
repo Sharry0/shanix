@@ -8,17 +8,41 @@
 }
 
 .contactForm{
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    background-color: rgb(33, 33, 33);
+    border-radius: 1rem;
     padding: 2rem 3rem;
     width: 50vw;
+}
+.contactForm button{
+    cursor: pointer;
+    background: #cccccc;
+    border-radius: 5px;
+    border: none;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+    padding: 0.5rem 1rem;
 }
 
 .input{
     display: flex;
     flex-direction: column;
     margin: 1rem;
-    /* width: 100%; */
+}
+
+.input label{
+    font-size: 1.2rem;
+}
+.input input, .input textarea {
+    background-color: #dddddd;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-family: Roboto;
 }
 .input input:focus{
-    outline: 2px solid green;
+    outline: 5px solid #C3DBE6;
 }
