@@ -127,7 +127,7 @@ export function MongoDb() {
         <div className={css.skill} onMouseEnter={() => setShowInfo(true)} onMouseLeave={() => setShowInfo(false)}>
             <MongoDbIcon />
             <div style={{ display: showInfo ? "block" : "none" }} >
-                <b><i>MongoDB</i></b>  is an open source NoSQL database management program. It's a tool that can manage document-oriented information, store or retrieve information. <br />
+                <b><i>MongoDB</i></b>  is an open source NoSQL database management program. It&apos;s a tool that can manage document-oriented information, store or retrieve information. <br />
 
                 <Link href="https://www.mongodb.com/">
                     <a target="_blank" rel="noreferrer">Learn more</a> 

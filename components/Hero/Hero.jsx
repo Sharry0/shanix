@@ -5,15 +5,12 @@ import HeroImg from "./HeroImg"
 import Link from "next/link"
 
 export default function Hero() {
-
-
-
     return (
         <section className={css.hero} id="hero">
             <div className={css.heroText}>
 
                 <h1>Hi, my name is Sharone. </h1>
-                <h2>I'm a Full-Stack Developer with an interest in Web3.</h2>
+                <h2>I&apos;m a Full-Stack Developer with an interest in Web3.</h2>
                 <div className={css.heroSocials}>
                     <Link href="https://github.com/Sharry0" target="_blank" rel="noreferrer">
                         <a>

@@ -1,5 +1,6 @@
 
 import css from "./Navbar.module.css"
+import Image from "next/image"
 import Link from "next/link"
 
 export default function Navbar() {
@@ -9,7 +10,7 @@ export default function Navbar() {
       <div>
         <Link href="/">
           <a>
-            <img className={css.logo} src="/monogramLogo.svg" alt="" />
+            <Image className={css.logo} src="/monogramLogo.svg" alt="logo" />
           </a>
         </Link>
       </div>
