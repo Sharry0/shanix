@@ -231,7 +231,7 @@ export function Phaser() {
     return (
         <div className={css.skill} onMouseEnter={() => setShowInfo(true)} onMouseLeave={() => setShowInfo(false)}>
             <span style={{ margin: "1rem" }}>
-                <Image height="60px" width="60px" src="/PhaserIcon.png" />
+                <Image height="60px" width="60px" src="/PhaserIcon.png" alt="Phaser logo" />
             </span>
             <div style={{ display: showInfo ? "block" : "none" }} >
                 <b><i>Phaser</i></b>    is a 2D game framework used for making HTML5 games for desktop and mobile. <br />

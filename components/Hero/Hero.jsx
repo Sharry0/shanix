@@ -17,12 +17,12 @@ export default function Hero() {
                 <div className={css.heroSocials}>
                     <Link href="https://github.com/Sharry0" target="_blank" rel="noreferrer">
                         <a>
-                            <Image src="/githubLogo.png" width="35px" height="35px" />
+                            <Image src="/githubLogo.png" width="35px" height="35px" alt="github link"/>
                         </a>
                     </Link>
                     <Link href="https://www.linkedin.com/in/sharone-nixon-918461248/" target="_blank" rel="noreferrer">
                         <a>
-                            <Image src="/linkedIn.png" width="35px" height="35px" />
+                            <Image src="/linkedIn.png" width="35px" height="35px" alt="linkedIn link"/>
                         </a>
                     </Link>
                 </div>
