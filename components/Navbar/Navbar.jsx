@@ -6,7 +6,9 @@ export default function Navbar() {
   return (
     <div className={css.navbar}>
       <div>
-        <img className={css.logo} src="/monogramLogo.svg" alt="" />
+        <a href="/">
+          <img className={css.logo} src="/monogramLogo.svg" alt="" />
+        </a>
       </div>
       <div className={css.menu}>
         <a href="#projects">Projects</a>

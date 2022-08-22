@@ -8,7 +8,7 @@ export default function Hero() {
 
 
     return (
-        <section className={css.hero}>
+        <section className={css.hero} id="hero">
             <div className={css.heroText}>
 
                 <h1>Hi, my name is Sharone. </h1>
