@@ -2,6 +2,7 @@
 import css from "./Hero.module.css"
 import Image from "next/image"
 import HeroImg from "./HeroImg"
+import Link from "next/link"
 
 export default function Hero() {
 
@@ -14,15 +15,24 @@ export default function Hero() {
                 <h1>Hi, my name is Sharone. </h1>
                 <h2>I'm a Full-Stack Developer with an interest in Web3.</h2>
                 <div className={css.heroSocials}>
-                    <a href="https://github.com/Sharry0" target="_blank">
-                        <Image src="/githubLogo.png" width="35px" height="35px" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/sharone-nixon-918461248/" target="_blank">
-                        <Image src="/linkedIn.png" width="35px" height="35px" />
-                    </a>
+                    <Link href="https://github.com/Sharry0" target="_blank" rel="noreferrer">
+                        <a>
+                            <Image src="/githubLogo.png" width="35px" height="35px" />
+                        </a>
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/sharone-nixon-918461248/" target="_blank" rel="noreferrer">
+                        <a>
+                            <Image src="/linkedIn.png" width="35px" height="35px" />
+                        </a>
+                    </Link>
                 </div>
-                <a href="#contact" className={css.heroBtnProject} >Contact</a>
-                <a href="#projects" className={css.heroBtnContact} >Projects</a>
+
+                <Link href="#contact">
+                    <a className={css.heroBtnProject} >Contact</a>
+                </Link>
+                <Link href="#projects">
+                    <a className={css.heroBtnContact} >Projects</a>
+                </Link>
             </div>
             <div className={css.heroImage}>
                 <HeroImg />

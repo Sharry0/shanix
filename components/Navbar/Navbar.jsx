@@ -1,19 +1,28 @@
 
 import css from "./Navbar.module.css"
+import Link from "next/link"
 
 export default function Navbar() {
 
   return (
     <div className={css.navbar}>
       <div>
-        <a href="/">
-          <img className={css.logo} src="/monogramLogo.svg" alt="" />
-        </a>
+        <Link href="/">
+          <a>
+            <img className={css.logo} src="/monogramLogo.svg" alt="" />
+          </a>
+        </Link>
       </div>
       <div className={css.menu}>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <Link href="#projects">
+          <a>Projects</a>
+        </Link>
+        <Link href="#skills">
+          <a>Skills</a>
+        </Link>
+        <Link href="#contact">
+          <a>Contact</a>
+        </Link>
       </div>
     </div>
   )
