@@ -23,7 +23,8 @@ export default function OrbitCenter({ orbitCenterPos, orbitSpeed, planetOffset, 
 
 function Planet({ planetOffset, planetSize, planetTexture }) {
     
-    const texture = planetTexture ? useLoader(TextureLoader, planetTexture) : false
+    // const texture = planetTexture ? useLoader(TextureLoader, planetTexture) : false
+    const texture = useLoader(TextureLoader, planetTexture) 
     return (
         <mesh position={planetOffset}>
             <sphereGeometry args={planetSize} />

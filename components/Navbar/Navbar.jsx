@@ -10,7 +10,7 @@ export default function Navbar() {
       <div>
         <Link href="/">
           <a>
-            <Image className={css.logo} src="/monogramLogo.svg" alt="logo" />
+            <Image  height="50px" width="50px" src="/monogramLogo.svg" alt="logo" />
           </a>
         </Link>
       </div>

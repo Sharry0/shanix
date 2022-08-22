@@ -3,8 +3,7 @@ import MainPlanet from "./MainPlanet"
 import OuterPlanet from "./OuterPlanet"
 import Sun from "./Sun"
 
-export default function 
-() {
+export default function () {
   return (
     <>
         <Background />
