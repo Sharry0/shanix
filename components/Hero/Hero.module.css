@@ -1,7 +1,7 @@
 .hero {
     height: 100vh;
     width: 100%;
-    background-color: #111111;
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,14 +11,17 @@
     width: 40vw;
     padding: 3rem;
 }
-.heroSocials{
+
+.heroSocials {
     margin: 1rem 0 4rem 0;
 }
+
 .heroSocials a {
     margin-right: 1rem;
 }
 
-.heroBtnProject , .heroBtnContact{
+.heroBtnProject,
+.heroBtnContact {
     cursor: pointer;
     font-weight: bold;
     font-size: 1.2rem;
@@ -28,14 +31,15 @@
 }
 
 .heroBtnProject {
-    background-color: #C3DBE6;
+    background-color: var(--accent-color);
     margin-right: 2rem;
-    color: #161616;
+    color: var(--secondary-color);
 }
+
 .heroBtnContact {
-    outline: 2px solid #C3DBE6;
+    outline: 2px solid var(--accent-color);
     background-color: transparent;
-    color: #C3DBE6;
+    color: var(--accent-color);
 }
 
 .heroImage {

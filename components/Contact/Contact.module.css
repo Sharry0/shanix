@@ -9,7 +9,6 @@
 }
 
 .contactForm{
-    /* border: 2px solid red; */
     background-color: rgb(33, 33, 33);
     border-radius: 1rem;
     padding: 2rem 3rem;
@@ -45,5 +44,5 @@
     font-family: Roboto;
 }
 .input input:focus{
-    outline: 5px solid #C3DBE6;
+    outline: 5px solid var(--accent-color);
 }
