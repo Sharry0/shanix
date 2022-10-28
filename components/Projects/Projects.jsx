@@ -1,17 +1,27 @@
 
 import css from "./Projects.module.css"
+import Image from "next/image"
 
 export default function Projects() {
-    return (
-        <section className={css.projectsSection} id="projects">
+  return (
+    <section className={css.projectsSection} id="projects">
 
 
-            <h2>Projects</h2>
-            <div className={css.display}>
-                <div style={{ height: "300px", width: "500px" }}></div>
-            </div>
+      <h2>Projects</h2>
+      <div className={css.some}>
+
+        <div className={css.display}>
+          <Image layout="fill" objectFit="contain" src="/CGS/CGS_1.png" alt="" />
+
+        </div>
+        <div className={css.displayBottom} >
+          <div></div>
 
 
-        </section>
-    )
+        </div>
+      </div>
+
+
+    </section>
+  )
 }

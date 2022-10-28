@@ -20,7 +20,7 @@ export default function Home() {
           <Hero />
 
           <Projects />
-          <Skills />
+           <Skills /> {/* you forgot express !!! */}
           <Contact />
           <Footer />
         </main>
