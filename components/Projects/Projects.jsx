@@ -13,12 +13,13 @@ export default function Projects() {
     "/CGS/CGS_6.png",
   ]
 
+  // _______ add the right web links !!!!_______________
+
   return (
     <section className={css.projectsSection} id="projects">
-
-
       <h2>Projects</h2>
-      <ImageSlider images={CgsImages} githubRepo={"https://github.com/Sharry0/CarGoSpace"} />
+
+      <ImageSlider images={CgsImages} githubRepo={"https://github.com/Sharry0/CarGoSpace"} projectName={"CarGoSpace"} webLink={"/"} />
 
 
     </section>

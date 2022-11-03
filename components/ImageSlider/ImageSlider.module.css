@@ -8,7 +8,7 @@
   display: inline-block;
   width: 150px;
   height: 0;
-  left: 375px;
+  left: 500px;
   border-bottom: 100px solid rgb(5, 5, 5);
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
@@ -16,10 +16,14 @@
   border-bottom-left-radius: 35px;
 }
 
+.projectName{
+  text-align: center;
+}
+
 .display {
   position: relative;
-  width: 950px;
-  height: 500px;
+  width: 1200px;
+  height: 650px;
   border-top: 20px solid rgb(5, 5, 5);
   border-left: 20px solid rgb(5, 5, 5);
   border-right: 20px solid rgb(5, 5, 5);
@@ -29,7 +33,7 @@
 
 .displayBottom {
   background-color: rgb(5, 5, 5);
-  width: 950px;
+  width: 1200px;
   height: 80px;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;

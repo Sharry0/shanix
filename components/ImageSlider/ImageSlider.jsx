@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ImageSlider({ images, githubRepo }) {
+export default function ImageSlider({ images, githubRepo, projectName, webLink }) {
 
   const [imageIndex, setImageIndex] = useState(0);
 
@@ -12,24 +12,28 @@ export default function ImageSlider({ images, githubRepo }) {
     const isLastImage = imageIndex === images.length - 1;
     const newIndex = isLastImage ? 0 : imageIndex + 1;
     setImageIndex(newIndex);
-  }
+  };
 
   const prevImageClick = () => {
     const isFirstImage = imageIndex === 0;
     const newIndex = isFirstImage ? images.length - 1 : imageIndex - 1
-    setImageIndex(newIndex)
-  }
-
-
-
-  // console.log(images.length)
+    setImageIndex(newIndex);
+  };
 
   return (
 
     <div className={css.project}>
-      <h3>CargoSpace</h3>
+      <h3 className={css.projectName} >{projectName}</h3>
       <div className={css.display}>
-        <Image layout="fill" objectFit="contain" src={images[imageIndex]} alt="" />
+        <Image
+          className={css.screenshots}
+          placeholder="blur"
+          blurDataURL={images[0]}
+          layout="fill"
+          objectFit="contain"
+          src={images[imageIndex]}
+          alt="Car go space screen shots"
+        />
       </div>
       <div className={css.displayBottom}>
         <button className={css.displayButton} onClick={prevImageClick} >
@@ -41,9 +45,9 @@ export default function ImageSlider({ images, githubRepo }) {
               <Image src="/githubLogo.png" width="35px" height="35px" alt="github link" />
             </a>
           </Link>
-          <Link href={githubRepo} >
+          <Link href={webLink} >
             <a target="_blank" rel="noreferrer">
-              <Image src="/githubLogo.png" width="35px" height="35px" alt="github link" />
+              <Image src="/website_icon.png" width="35px" height="35px" alt="github link" />
             </a>
           </Link>
 
@@ -56,4 +60,4 @@ export default function ImageSlider({ images, githubRepo }) {
       </div>
     </div>
   )
-}
+};
