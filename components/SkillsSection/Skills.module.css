@@ -4,14 +4,15 @@
     width: 100%;
     padding-top: 10vh;
     padding-bottom: 25vh;
-    background-color: var(--primary-color);
+    background-image: url("/primary-bg.svg");
+    background-repeat: repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.skillSection::after{
+/* .skillSection::after{
     position: absolute;
     content: "";
     height: 10vw;
@@ -19,7 +20,7 @@
     bottom: -15px;
     background-image: url("/bgWave2.svg");
     background-size: 100% 100%;
-}
+} */
 
 .skillsContainer{
     display: flex;
