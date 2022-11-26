@@ -8,7 +8,7 @@ export default function Bulb(props) {
   const light = useRef();
 
   useFrame((state, delta) => (
-    light?.current?.position?.set(mouse.x, mouse.y , -7)
+    light?.current?.position?.set(mouse.x*10, mouse.y*10 , -3)
 
   ))
 

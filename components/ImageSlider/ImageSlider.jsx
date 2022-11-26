@@ -1,6 +1,6 @@
 
 import css from "./ImageSlider.module.css";
-import { useState } from "react";
+import { useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,21 +21,19 @@ export default function ImageSlider({ images, githubRepo, projectName, webLink }
   };
 
   return (
-
     <div className={css.project}>
       <h3 className={css.projectName} >{projectName}</h3>
-      <div className={css.display}>
+      <div className={css.screenshots}>
         <Image
-          className={css.screenshots}
-          placeholder="blur"
+          placeholder="blur" 
           blurDataURL={images[0]}
           layout="fill"
           objectFit="contain"
           src={images[imageIndex]}
-          alt="Car go space screen shots"
+          alt={`${projectName} screen shots`}
         />
       </div>
-      <div className={css.displayBottom}>
+      <div className={css.imgMenu}>
         <button className={css.displayButton} onClick={prevImageClick} >
           <Image height="50px" width="50px" src="/prev_button.svg" alt="previous button" />
         </button>
@@ -50,13 +48,10 @@ export default function ImageSlider({ images, githubRepo, projectName, webLink }
               <Image src="/website_icon.png" width="35px" height="35px" alt="github link" />
             </a>
           </Link>
-
-
         </div>
         <button className={css.displayButton} onClick={nextImageClick} >
           <Image height="50px" width="50px" src="/next_button.svg" alt="previous button" />
         </button>
-
       </div>
     </div>
   )
