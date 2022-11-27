@@ -8,14 +8,14 @@ export default function Bulb(props) {
   const light = useRef();
 
   useFrame((state, delta) => (
-    light?.current?.position?.set(mouse.x*10, mouse.y*10 , -3)
+    light?.current?.position?.set(mouse.x*50, mouse.y*50 , -3)
 
   ))
 
   return (
     <mesh {...props} ref={light} >
       <pointLight castShadow />
-      <sphereGeometry args={[0.5, 10, 10]} />
+      <sphereGeometry args={[0.8, 20, 10]} />
       <meshPhongMaterial emissive={"red"} />
     </mesh>
   )

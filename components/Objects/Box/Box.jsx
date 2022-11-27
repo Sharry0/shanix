@@ -12,13 +12,13 @@ export default function Box(props) {
     const [hovered, hover] = useState(false)
   useCursor(hovered)
     useFrame(({clock}) => (
-        Object.assign(mesh.current.rotation, { x: 0, y: clock.getElapsedTime() / 3 , z: clock.getElapsedTime() / 1 }),
+        Object.assign(mesh.current.rotation, { x: 0, y: clock.getElapsedTime() / 7 , z: clock.getElapsedTime() / 3 }),
         mesh.current.distort = THREE.MathUtils.lerp(mesh.current.distort, hovered ? 0.4 : 0, hovered ? 0.05 : 0.01)
         ))
     return (
             <mesh {...props} receiveShadow={true} castShadow={true} ref={mesh}>
 
-                <boxBufferGeometry />
+                <boxBufferGeometry args={[0.5, 20, 10]} />
                 <meshPhysicalMaterial  color={"white"} />
             </mesh>
     )
