@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <div className={css.navbar}>
-      <div>
+      <div className={css.logo}>
         <Link href="/">
           <a>
             <Image  height="50px" width="50px" src="/monogramLogo.svg" alt="logo" />

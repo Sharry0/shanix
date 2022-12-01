@@ -1,8 +1,7 @@
 
-import css from "./Hero.module.css"
-import Image from "next/image"
-import HeroImg from "./HeroImg"
-import Link from "next/link"
+import css from "./Hero.module.css";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -32,7 +31,7 @@ export default function Hero() {
         </Link>
       </div>
       <div className={css.heroImage}>
-        <HeroImg />
+        <Image src="/heroImg.svg" layout="fill" priority alt="Hero img. Person standing at a desk, with a monitor infront of him" />
       </div>
     </section>
   )
