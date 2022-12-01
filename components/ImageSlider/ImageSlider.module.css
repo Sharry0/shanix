@@ -10,8 +10,8 @@
 
 .screenshots {
   position: relative;
-  width: 1200px;
-  height: 650px;
+  width: 80vw;
+  height: 40vw;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }

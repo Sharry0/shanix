@@ -1,36 +1,35 @@
-
-.skill{
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 1rem;
-    border-bottom: 2px solid gray;
-    width: 300px;
+.skill {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+  border-bottom: 2px solid gray;
+  width: 300px;
 }
 
-.skill svg{
-    margin: 1rem;
+.skill svg {
+  margin: 1rem;
 }
 
-.skill div{
-    background: rgba(0, 0, 0, 0.9);
-    border-radius: 0.5rem;
-    position: absolute;
-    padding: 1rem;
-    bottom: 0;
-    left: 0;
-    display: none;
+.skill div {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 0.5rem;
+  position: absolute;
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+  display: none;
 }
 
-.skill div a{
-    border-bottom: 2px solid lightblue;
+.skill div a {
+  border-bottom: 2px solid lightblue;
 }
 
 .skill p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+  margin-left: 1rem;
 }
 
-.skill:hover{
-    cursor: help;
+.skill:hover {
+  cursor: help;
 }
-

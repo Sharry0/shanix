@@ -1,14 +1,15 @@
 
 import css from "./Skill.module.css"
-import { useState } from "react"
-import Link from "next/link"
-
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export  function Skill({ icon, boldedText, text, learnLink, iconLink, iconPage, title }) {
   const [showInfo, setShowInfo] = useState(false);
   return (
     <div className={css.skill} onMouseEnter={() => setShowInfo(true)} onMouseLeave={() => setShowInfo(false)}>
-      {icon}
+
+      <Image height="60px" width="60px" src={`/SkillsSvg/${icon}`} alt={`${title} logo`} />
       <div style={{ display: showInfo ? "block" : "none" }} >
         <b><i>{boldedText}</i></b>{text}<br />
         <Link href={learnLink}>

@@ -1,7 +1,6 @@
 
 import css from "../styles/Home.module.css";
-import LandingSvg from "../components/LandingSvg/LandingSvg";
-import About from "../components/About/About";
+import LandingSvg from "../components/LandingSvg/LandingSvg"
 import Hero from "../components/Hero/Hero";
 import Navbar from "../components/Navbar/Navbar";
 import Projects from "../components/Projects/Projects"
@@ -17,8 +16,8 @@ export default function Home() {
         <Navbar />
         <main className={css.main} >
           <Hero />
-          <Projects /> {/* because of project images scrollbar X on small screen */}
-          <SkillsList /> {/* you forgot express !!! */}
+          <Projects /> 
+          <SkillsList /> 
           <Contact />
           <Footer />
         </main>
