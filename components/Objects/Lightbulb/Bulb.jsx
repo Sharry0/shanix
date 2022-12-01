@@ -15,7 +15,7 @@ export default function Bulb(props) {
   return (
     <mesh {...props} ref={light} >
       <pointLight castShadow />
-      <sphereGeometry args={[0.8, 20, 10]} />
+      <sphereGeometry args={[0, 20, 10]} />
       <meshPhongMaterial emissive={"red"} />
     </mesh>
   )

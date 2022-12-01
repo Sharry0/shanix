@@ -5,7 +5,7 @@ import About from "../components/About/About";
 import Hero from "../components/Hero/Hero";
 import Navbar from "../components/Navbar/Navbar";
 import Projects from "../components/Projects/Projects"
-import Skills from "../components/SkillsSection/Skills";
+import SkillsList from "../components/SkillsSection/SkillsList";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 
@@ -16,11 +16,9 @@ export default function Home() {
       <div className={css.home} >
         <Navbar />
         <main className={css.main} >
-
           <Hero />
-
-          <Projects />
-           <Skills /> {/* you forgot express !!! */}
+          <Projects /> {/* because of project images scrollbar X on small screen */}
+          <SkillsList /> {/* you forgot express !!! */}
           <Contact />
           <Footer />
         </main>
