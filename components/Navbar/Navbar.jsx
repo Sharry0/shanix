@@ -7,6 +7,7 @@ export default function Navbar() {
 
   return (
     <div className={css.navbar}>
+      <span className={css.navShadow}></span>
       <div className={css.logo}>
         <Link href="/">
           <a>

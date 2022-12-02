@@ -11,7 +11,7 @@ export default function Footer() {
       </div>
 
       <div className={css.east}>
-        <p>Sharone &copy; 2022 </p>
+        <p>&copy;2022 Sharone</p>
         <div>
           <Link href="https://github.com/Sharry0" >
             <a target="_blank" rel="noreferrer">

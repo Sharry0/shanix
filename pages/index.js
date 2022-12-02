@@ -16,8 +16,8 @@ export default function Home() {
         <Navbar />
         <main className={css.main} >
           <Hero />
-          <Projects /> 
-          <SkillsList /> 
+          <Projects />
+          <SkillsList />
           <Contact />
           <Footer />
         </main>
