@@ -18,10 +18,10 @@ export default function LandingSvg() {
             .to(["#S", "#H", "#A", "#R", "#O", "#N", "#E"], {opacity: 0, duration:2}, 0)
             .to("#svgMonogram", {zIndex: -10, opacity: 0}, 2)
     }, [])
-
+    // original viewBox="200 150 900 900"
     return (
         <>
-                <svg  id="svgMonogram" width="100%" height="100%" viewBox="200 150 900 900" version="1.1" style={{ fillRule: "evenodd", clipRule: "evenodd", strokeLinejoin: "miter", strokeMiterlimit: 2, position: "absolute", backgroundColor: "#111111", zIndex: 10 }}>
+                <svg  id="svgMonogram" width="100%" height="100%" viewBox="-350 150 2000 900" version="1.1" style={{ fillRule: "evenodd", clipRule: "evenodd", strokeLinejoin: "miter", strokeMiterlimit: 2, position: "absolute", backgroundColor: "#111111", zIndex: 10 }}>
                     <g id="monogram" transform="matrix(12.5,0,0,12.4985,-1362.06,-13744.6)" stroke="#93B2BF" strokeWidth="0.25px" >
                         <g id="S" transform="matrix(0.999844,0,0,0.999844,24.9619,86.0181)">
                             <path d="M127.423,1072.25C127.423,1072.25 129.88,1072.26 132.358,1072.26C133.702,1072.26 134.99,1071.72 135.94,1070.77C136.89,1069.82 137.424,1068.54 137.424,1067.19C137.424,1067.19 137.424,1067.18 137.424,1067.18C137.424,1064.46 135.219,1062.25 132.5,1062.25L132.423,1062.25C129.661,1062.25 127.423,1060.02 127.423,1057.25L127.423,1057.25C127.423,1054.49 129.661,1052.25 132.423,1052.25L137.423,1052.25" fill="none" />
