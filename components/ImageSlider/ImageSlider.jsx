@@ -22,7 +22,7 @@ export default function ImageSlider({ images, githubRepo, projectName, webLink }
 
   return (
     <div className={css.project}>
-      <h3 className={css.projectName} >{projectName}</h3>
+      
       <div className={css.screenshots}>
         <Image
           placeholder="blur" 
@@ -33,6 +33,7 @@ export default function ImageSlider({ images, githubRepo, projectName, webLink }
           alt={`${projectName} screen shots`}
         />
       </div>
+      <h3 className={css.projectName} >{projectName}</h3>
       <div className={css.imgMenu}>
         <button className={css.displayButton} onClick={prevImageClick} >
           <Image height="50px" width="50px" src="/prev_button.svg" alt="previous button" />
@@ -53,6 +54,7 @@ export default function ImageSlider({ images, githubRepo, projectName, webLink }
           <Image height="50px" width="50px" src="/next_button.svg" alt="previous button" />
         </button>
       </div>
+      
     </div>
   )
 };
