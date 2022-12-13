@@ -98,3 +98,10 @@
     height: 280px;
   }
 }
+@media (max-height: 700px) {
+  .heroImage{
+    width: 200px;
+    height: 200px;
+    margin-top: 3rem;
+  }
+}

@@ -49,6 +49,14 @@ h2 {
     font-size: 1.3rem;
   }
 }
+@media (max-height: 700px) {
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.2rem;
+  }
+}
 
 @font-face {
   font-family: "Roboto";
