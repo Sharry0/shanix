@@ -24,7 +24,7 @@ export default function Projects() {
     <section className={css.projectsSection} id="projects">
       <h2>Projects</h2>
       <ImageSlider images={cgsImages} githubRepo={"https://github.com/Sharry0/CarGoSpace"} projectName={"CarGoSpace"} webLink={"https://cargospace.netlify.app"} />
-      <ImageSlider images={blerryImages} githubRepo={"https://github.com/Sharry0/Blerry"} projectName={"Blerry"} webLink={"https://resonant-jalebi-002b78.netlify.app/"} />
+      <ImageSlider images={blerryImages} githubRepo={"https://github.com/Sharry0/Blerry"} projectName={"Blerry"} webLink={"https://blerry.netlify.app/"} />
 
     </section>
   )
