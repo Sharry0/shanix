@@ -18,7 +18,7 @@ export default function Contact() {
       <div className={css.form} >
         <form action="https://formsubmit.co/b976dc71c2bc87cbaa28fef34037fe61" method="POST" >
 
-          <input type="hidden" name="_next" value="http://localhost:3000/thanks" />
+          <input type="hidden" name="_next" value="http://sharone.dev/thanks" />
 
           <div className={css.input} >
             {/* <label htmlFor="firstname">Firstname</label> */}
