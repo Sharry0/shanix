@@ -98,7 +98,7 @@
     height: 280px;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 800px) {
   .heroImage{
     width: 200px;
     height: 200px;

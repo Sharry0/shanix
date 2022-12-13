@@ -49,7 +49,7 @@ h2 {
     font-size: 1.3rem;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 750px) {
   h1{
     font-size: 2rem;
   }
