@@ -10,21 +10,13 @@ export default function Navbar() {
       <span className={css.navShadow}></span>
       <div className={css.logo}>
         <Link href="/">
-          <a>
-            <Image  height="50px" width="50px" src="/monogramLogo.svg" alt="logo" />
-          </a>
+          <Image height="50" width="50" src="/monogramLogo.svg" alt="logo" />
         </Link>
       </div>
       <div className={css.menu}>
-        <Link href="#projects">
-          <a>Projects</a>
-        </Link>
-        <Link href="#skills">
-          <a>Skills</a>
-        </Link>
-        <Link href="#contact">
-          <a>Contact</a>
-        </Link>
+        <Link href="#projects">Projects</Link>
+        <Link href="#skills">Skills</Link>
+        <Link href="#contact">Contact</Link>
       </div>
     </div>
   )

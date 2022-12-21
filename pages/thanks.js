@@ -7,7 +7,7 @@ export default function thanks() {
     <div className={css.thanksPage}>
       <h1>Thank you for the message,</h1>
       <h2>i will contact you as soon as possible.</h2>
-      <Link href="/">
+      <Link legacyBehavior href="/">
         <a>Back to home</a>
       </Link>
 

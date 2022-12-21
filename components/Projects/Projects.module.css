@@ -20,7 +20,6 @@
   text-align: center;
 }
 .links{
-  /* width: 100%; */
   text-align: center;
 }
 .links a{
@@ -32,6 +31,7 @@
   border-radius: 0.5rem;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 .projectsSection::before {
     position: absolute;
     content: "";

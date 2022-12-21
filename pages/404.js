@@ -8,7 +8,7 @@ export default function Custom404() {
     <div className="errorPage">
       <Image src="/404.svg" width={800} height={600} alt="error" />
       <h2>Sorry, the page you are looking for doesn&apos;t exist.</h2>
-      <Link href="/" >
+      <Link legacyBehavior href="/" >
         <a className="backHome" >Back to home</a>
       </Link>
     </div>

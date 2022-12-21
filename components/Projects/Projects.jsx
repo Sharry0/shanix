@@ -36,10 +36,9 @@ export default function Projects() {
                 <Image
                   src={image.src}
                   alt="CarGoSpace Screenshot"
-                  layout="fill"
+                  fill
                   blurDataURL={image.src}
                   data-lightboxjs="lightbox1"
-                  quality={80}
                 />
               </div>
               :
@@ -49,60 +48,58 @@ export default function Projects() {
                 height={0}
                 width={0}
                 data-lightboxjs="lightbox1"
-                quality={80}
                 key={i}
               />
           ))}
         </SlideshowLightbox>
         <div className={css.links} >
-          <Link href={"https://github.com/Sharry0/CarGoSpace"} >
+          <Link legacyBehavior href={"https://github.com/Sharry0/CarGoSpace"} >
             <a target="_blank" rel="noreferrer">
-              <Image src="/githubLogo.png" width="35px" height="35px" alt="github link" />
+              <Image src="/githubLogo.png" width="35" height="35" alt="github link" />
             </a>
           </Link>
-          <Link href={"https://cargospace.netlify.app"} >
+          <Link legacyBehavior href={"https://cargospace.netlify.app"} >
             <a target="_blank" rel="noreferrer">
-              <Image src="/website_icon.png" width="35px" height="35px" alt="github link" />
+              <Image src="/website_icon.png" width="35" height="35" alt="github link" />
             </a>
           </Link>
         </div>
       </div>
       <div className={css.slideShow} >
         <h3>Blerry</h3>
-        <SlideshowLightbox lightboxIdentifier="lightbox2" showLoader={true}  framework="next" showThumbnails images={blerryImages} slideshowInterval={1600} >
+        <SlideshowLightbox lightboxIdentifier="lightbox2" showLoader={true} framework="next" showThumbnails images={blerryImages} slideshowInterval={1600} >
           {blerryImages.map((image, i) => (
             i === 0 ?
-              <div style={{ height: "40vw", width: "80vw", position: "relative", marginBottom: "5px" }} key={i + 20}>
+              <div style={{ height: "40vw", width: "80vw", position: "relative", marginBottom: "5" }} key={i + 20}>
                 <Image
                   src={image.src}
-                  alt="CarGoSpace Screenshot"
-                  layout="fill"
+                  alt="Blerry Screenshot"
+                  fill
                   blurDataURL={image.src}
                   data-lightboxjs="lightbox2"
-                  quality={80}
                 />
               </div>
               :
               <Image
                 src={image.src}
-                alt="CarGoSpace Screenshot"
+                className={{ backgroundColor: "red" }}
+                alt="Blerry Screenshot"
                 height={0}
                 width={0}
                 data-lightboxjs="lightbox2"
-                quality={80}
                 key={i + 20}
               />
           ))}
         </SlideshowLightbox>
         <div className={css.links} >
-          <Link href={"https://github.com/Sharry0/Blerry"} >
+          <Link legacyBehavior href={"https://github.com/Sharry0/Blerry"} >
             <a target="_blank" rel="noreferrer">
-              <Image src="/githubLogo.png" width="35px" height="35px" alt="github link" />
+              <Image src="/githubLogo.png" width="35" height="35" alt="github link" />
             </a>
           </Link>
-          <Link href={"https://blerry.netlify.app"} >
+          <Link legacyBehavior href={"https://blerry.netlify.app"} >
             <a target="_blank" rel="noreferrer">
-              <Image src="/website_icon.png" width="35px" height="35px" alt="github link" />
+              <Image src="/website_icon.png" width="35" height="35" alt="github link" />
             </a>
           </Link>
         </div>
