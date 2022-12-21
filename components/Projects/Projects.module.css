@@ -13,7 +13,25 @@
     align-items: center;
     padding: 5rem 0 
 }
-
+.projectsSection h2{
+  margin-bottom: 10rem;
+}
+.projectsSection h3{
+  text-align: center;
+}
+.links{
+  /* width: 100%; */
+  text-align: center;
+}
+.links a{
+  margin: 0 1rem ;
+}
+.slideShow{
+  margin-bottom: 10rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .projectsSection::before {
     position: absolute;
     content: "";
