@@ -29,7 +29,7 @@ export default function Projects() {
       <div className={css.slideShow} >
         <h3>CarGoSpace</h3>
 
-        <SlideshowLightbox lightboxIdentifier="lightbox1" framework="next" showThumbnails images={cgsImages} slideshowInterval={1600} >
+        <SlideshowLightbox lightboxIdentifier="lightbox1" framework="next" showLoader={true} showThumbnails images={cgsImages} slideshowInterval={1600} >
           {cgsImages.map((image, i) => (
             i === 0 ?
               <div style={{ height: "40vw", width: "80vw", position: "relative", marginBottom: "5px" }} key={i}>
@@ -37,6 +37,7 @@ export default function Projects() {
                   src={image.src}
                   alt="CarGoSpace Screenshot"
                   layout="fill"
+                  blurDataURL={image.src}
                   data-lightboxjs="lightbox1"
                   quality={80}
                 />
@@ -45,7 +46,6 @@ export default function Projects() {
               <Image
                 src={image.src}
                 alt="CarGoSpace Screenshot"
-                // layout="fill"
                 height={0}
                 width={0}
                 data-lightboxjs="lightbox1"
@@ -69,23 +69,23 @@ export default function Projects() {
       </div>
       <div className={css.slideShow} >
         <h3>Blerry</h3>
-        <SlideshowLightbox lightboxIdentifier="lightbox2" framework="next" showThumbnails images={blerryImages} slideshowInterval={1600} >
-          {blerryImages.map((img, i) => (
+        <SlideshowLightbox lightboxIdentifier="lightbox2" showLoader={true}  framework="next" showThumbnails images={blerryImages} slideshowInterval={1600} >
+          {blerryImages.map((image, i) => (
             i === 0 ?
               <div style={{ height: "40vw", width: "80vw", position: "relative", marginBottom: "5px" }} key={i + 20}>
                 <Image
-                  src={img.src}
+                  src={image.src}
                   alt="CarGoSpace Screenshot"
                   layout="fill"
+                  blurDataURL={image.src}
                   data-lightboxjs="lightbox2"
                   quality={80}
                 />
               </div>
               :
               <Image
-                src={img.src}
+                src={image.src}
                 alt="CarGoSpace Screenshot"
-                // layout="fill"
                 height={0}
                 width={0}
                 data-lightboxjs="lightbox2"
