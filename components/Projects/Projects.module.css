@@ -1,56 +1,80 @@
-
-
 .projectsSection {
-    position: relative;
-    width: 100%;
-    /* background-color: var(--secondary-color); */
-    background-image: url("/secondary-bg.svg");
-    background-repeat: repeat;
-    z-index: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem 0 
+  position: relative;
+  width: 100%;
+  /* background-color: var(--secondary-color); */
+  background-image: url("/primary-bg.svg");
+  background-repeat: repeat;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0
 }
-.projectsSection h2{
-  margin-bottom: 10rem;
+
+.projectsSection h2 {
+  margin-bottom: 5rem;
 }
-.projectsSection h3{
-  text-align: center;
-}
-.links{
-  text-align: center;
-}
-.links a{
-  margin: 0 1rem ;
-}
-.slideShow{
+
+
+
+/* __________________ ProjectDisplay ____________________________ */
+
+.slideShow {
+  display: flex;
+  gap: 30px;
   margin-bottom: 10rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(50, 50, 50, 0.2);
 }
 
-.projectsSection::before {
-    position: absolute;
-    content: "";
-    top: -10px;
-    width: 100%;
-    height: 5.48vw;
-    /* background-image: url("/bgWave.svg"); */
-    background-size: 100% 100%;
-    z-index: -10;
+.imgContainer {
+  height: 25vw;
+  width: 50vw;
+  position: relative;
+  margin-bottom: 5px;
 }
 
-.projectsSection::after {
-    position: absolute;
-    content: "";
-    bottom: -10px;
-    width: 100%;
-    height: 5.48vw;
-    /* background-image: url("/bgWave.svg"); */
-    background-size: 100% 100%;
-    z-index: -10;
-    transform: scale(-1, -1);
+.image {
+  filter: brightness(0.3);
+  transition: filter 1s;
+}
+
+.image:hover {
+  filter: brightness(1);
+}
+
+.links {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.links a {
+  margin: 0 1rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 300px;
+  
+}
+
+
+@media (max-width: 1000px) {
+  .slideShow {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .imgContainer{
+    height: 40vw;
+    width: 80vw;
+  }
+  .description{
+    align-items: center;
+    text-align: center;
+  }
 }

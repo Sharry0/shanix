@@ -27,7 +27,7 @@ function ContactBox(props) {
     >
       <mesh ref={mesh}>
         <boxBufferGeometry args={[1, 1, 1]} />
-        <meshStandardMaterial color="#C3DBE6" />
+        <meshStandardMaterial color="#333" />
       </mesh>
     </Float>
     // <mesh {...props} receiveShadow={true} castShadow={true} ref={mesh}>
@@ -39,6 +39,6 @@ function ContactBox(props) {
 }
 
 export default function Boxes() {
-  return Array.from({ length: 15 }, (_, i) => <ContactBox key={i} />)
+  return Array.from({ length: 4 }, (_, i) => <ContactBox key={i} />)
 }
 
