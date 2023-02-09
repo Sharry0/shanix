@@ -3,9 +3,6 @@
   --secondary-color: #252525;
   --accent-color: #C3DBE6;
 }
-html{
-  height: 100vh;
-}
 
 html,
 body {
@@ -35,6 +32,22 @@ h1 {
 h2 {
   font-size: 1.8rem;
 }
+
+/* _________ addition to lightbox package / fix for mobile and tablet  ________ */
+.slideshowAnimContainer{
+  background-color: rgb(21, 21, 21);
+  /* max-height: 100dvh; */
+}
+
+.lightboxContainer{
+  max-height: 100%;
+}
+
+.lightbox_img{
+  object-fit: contain;
+}
+ /* ____________________________________________________________________________ */
+
 
 @media (max-width: 1200px) {
   h1{
