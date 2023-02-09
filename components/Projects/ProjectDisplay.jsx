@@ -16,6 +16,7 @@ export default function ProjectDisplay({ imgArr, id, title, description, github,
                   src={image.src}
                   alt="CarGoSpace Screenshot"
                   fill
+                  sizes="100%"
                   blurDataURL={image.src}
                   data-lightboxjs={id}
                   className={css.image}

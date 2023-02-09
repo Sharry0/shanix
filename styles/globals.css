@@ -3,6 +3,9 @@
   --secondary-color: #252525;
   --accent-color: #C3DBE6;
 }
+html{
+  height: 100vh;
+}
 
 html,
 body {

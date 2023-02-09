@@ -36,7 +36,7 @@ export default function Hero() {
         </Link>
       </div>
       <div className={css.heroImage}>
-        <Image src="/heroImg.svg" fill priority alt="Hero img. Person standing at a desk, with a monitor infront of him" />
+        <Image src="/heroImg.svg" fill priority sizes="100%" alt="Hero img. Person standing at a desk, with a monitor infront of him" />
       </div>
     </section>
   )
