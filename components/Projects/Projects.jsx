@@ -4,31 +4,51 @@ import ProjectDisplay from "./ProjectDisplay";
 
 export default function Projects() {
 
+  const wellaminImages = [
+    { src: "/Wellamin/Wellamin_landing.png"},
+    { src: "/Wellamin/Wellamin_Blender_animation.gif"}, 
+    { src: "/Wellamin/Wellamin_science_page.png"},
+    { src: "/Wellamin/Wellamin_news_page.png"},
+    { src: "/Wellamin/Wellamin_about_page.png"},
+    { src: "/Wellamin/Wellamin_contact_page.png"},
+  ]
+
   const cgsImages = [
-    { src: "/CGS/CGS_1.png" },
-    { src: "/CGS/CGS_2.png" },
-    { src: "/CGS/CGS_3.png" },
-    { src: "/CGS/CGS_4.png" },
-    { src: "/CGS/CGS_5.png" },
-    { src: "/CGS/CGS_6.png" }
+    { src: "/CGS/CGS_1.png"},
+    { src: "/CGS/CGS_2.png"},
+    { src: "/CGS/CGS_3.png"},
+    { src: "/CGS/CGS_4.png"},
+    { src: "/CGS/CGS_5.png"},
+    { src: "/CGS/CGS_6.png"}
   ];
   const blerryImages = [
-    { src: "/Blerry/Blerry_1.png" },
-    { src: "/Blerry/Blerry_2.png" },
-    { src: "/Blerry/Blerry_3.png" },
-    { src: "/Blerry/Blerry_4.png" }
+    { src: "/Blerry/Blerry_1.png"},
+    { src: "/Blerry/Blerry_2.png"},
+    { src: "/Blerry/Blerry_3.png"},
+    { src: "/Blerry/Blerry_4.png"}
   ];
   const statsImages = [
-    { src: "/blacksquareStats/stats_1.png" },
-    { src: "/blacksquareStats/stats_2.png" },
-    { src: "/blacksquareStats/stats_3.png" },
-    { src: "/blacksquareStats/stats_4.png" },
-    { src: "/blacksquareStats/stats_5.png" }
+    { src: "/blacksquareStats/stats_1.png"},
+    { src: "/blacksquareStats/stats_2.png"},
+    { src: "/blacksquareStats/stats_3.png"},
+    { src: "/blacksquareStats/stats_4.png"},
+    { src: "/blacksquareStats/stats_5.png"}
   ];
 
   return (
     <section className={css.projectsSection} id="projects">
       <h2>Projects</h2>
+      <ProjectDisplay
+        imgArr={wellaminImages}
+        id={"wellamin"}
+        title={"Wellamin"}
+        github={"https://github.com/Sharry0/wellamin"}
+        website={"https://wellamin.netlify.app/"}
+        description={<>
+          <p> This website features a unique animation of a medicine bottle opening and a pill emerging, as well as custom-designed SVG forms for a polished and cohesive design. The animation of the medicine bottle opening and the pill emerging is based on the user&apos;s scrolling action, providing an interactive and engaging experience.</p>
+          <p>Technologies: Next.js, Blender, three.js, Affinity Designer.</p>
+        </>}
+      />
       <ProjectDisplay
         imgArr={statsImages}
         id={"stats"}
@@ -62,7 +82,7 @@ export default function Projects() {
           <p>Technologies: React, Web3, ethers, Opensea API, CoinGecko API, MetaMask API</p>
         </>}
       />
-      
+
     </section>
   )
 }
